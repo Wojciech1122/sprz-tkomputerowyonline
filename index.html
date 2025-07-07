@@ -3,127 +3,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sprzęt Komputerowy - Recenzje i Porady</title>
+  <title>Sprzęt Komputerowy Online</title>
+
+  <!-- ✅ Metatagi SEO -->
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Nowości i recenzje sprzętu komputerowego. Sprawdź najnowsze informacje o kartach graficznych, takich jak RTX 5060.">
+  <meta name="keywords" content="sprzęt komputerowy, karty graficzne, RTX 5060, recenzje, nowości NVIDIA">
+  <meta name="author" content="Wojciech1122">
+
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background-color: #f5f5f5;
-      color: #333;
+      margin: 0;
+      background-color: #f0f0f0;
+      position: relative;
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
-    header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 20px;
-      text-align: center;
+
+    /* Czerwony pasek u góry */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 20px;
+      background-color: red;
+      z-index: 1000;
     }
-    nav {
-      background-color: #34495e;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 10px 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-    section {
-      margin-bottom: 40px;
-    }
-    h2 {
-      border-bottom: 2px solid #2c3e50;
-      padding-bottom: 8px;
-      margin-bottom: 15px;
-    }
-    .review {
-      background-color: white;
-      padding: 15px;
-      border-radius: 6px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-      margin-bottom: 15px;
-    }
-    footer {
-      background-color: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 15px 0;
+
+    /* Czerwony pasek u dołu */
+    body::after {
+      content: "";
       position: fixed;
       bottom: 0;
+      left: 0;
       width: 100%;
+      height: 20px;
+      background-color: red;
+      z-index: 1000;
     }
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-      }
+
+    h1, h2 {
+      color: black;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    section {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 800px;
+      margin: 30px auto;
+    }
+
+    section#reviews {
+      border: 2px solid #007acc;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Moja Strona o Sprzęcie Komputerowym</h1>
+    <h1>Sprzęt Komputerowy Online</h1>
   </header>
 
   <section id="news">
-    <h2>Aktualności</h2>
-
-    <article>
-      <div class="news-date">2025-07-07</div>
-      <h3>Nowość NVIDIA RTX 5060 – kontrowersyjna karta z nowym frame generation</h3>
-      <p>
-        Na rynek jakiś czas temu weszła nowość od NVIDIA. Jest to RTX 5060. To karta dość kontrowersyjna z uwagi na obecność dość małej ilości pamięci VRAM.
-        Niektórych użytkowników, którzy posiadają starsze modele z rodziny RTX ..60, może zastanowić się nad zmianą karty właśnie na RTX 5060.
-        Zapewne użytkownicy zwrócą uwagę na nowy frame generation, który oferować może kilkukrotną poprawę wydajności względem starszego już frame generation.
-        Niestety, nowy frame generator ma swoje minusy, jak np. zapełnienie pamięci karty, co przy 8 GB pamięci może być dość znaczące, gdy będziemy chcieli dokonać zmian w detalach graficznych.
-      </p>
-    </article>
-
+    <h2>Nowości: RTX 5060</h2>
+    <p>Na rynek jakiś czas temu weszła nowość od NVIDIA. Jest to RTX 5060. To karta dość kontrowersyjna z uwagi na obecność dość małej ilości pamięci VRAM.</p>
+    <p>Niektórzy użytkownicy, którzy posiadają starsze modele z rodziny RTX ..60 mogą zastanowić się nad zmianą karty właśnie na RTX 5060.</p>
+    <p>Zapewne użytkownicy zwrócą uwagę na nowy frame generation, który oferować może kilkukrotną poprawę wydajności względem starszego już frame generation.</p>
+    <p>Niestety, nowy frame generator ma swoje minusy jak np. zapełnienie pamięci karty, co przy 8 GB pamięci może być dość znaczące, gdy będziemy chcieli dokonać zmian w detalach graficznych.</p>
   </section>
 
-  <footer>
-    <p>© 2025 Moja Strona o Sprzęcie Komputerowym</p>
-  </footer>
-
-</body>
-    <h1>Sprzęt Komputerowy - Recenzje i Porady</h1>
-  </header>
-  <nav>
-    <a href="#about">O sprzęcie</a>
-    <a href="#reviews">Recenzje</a>
-    <a href="#contact">Kontakt</a>
-  </nav>
-  <main>
-    <section id="about">
-      <h2>O sprzęcie komputerowym</h2>
-      <p>Na tej stronie znajdziesz najnowsze informacje, recenzje i porady dotyczące sprzętu komputerowego. Pomagamy wybrać najlepsze podzespoły, optymalizować działanie komputera i rozwiązywać problemy techniczne.</p>
-    </section>
-    <section id="reviews">
-      <h2>Recenzje</h2>
-      <div class="review">
-        <h3>Karta graficzna XYZ 3080</h3>
-        <p>Ta karta graficzna oferuje świetną wydajność w grach i programach graficznych. Sprawdzi się zarówno dla graczy, jak i profesjonalistów.</p>
-      </div>
-      <div class="review">
-        <h3>Procesor ABC Ryzen 5 5600X</h3>
-        <p>Świetny procesor dla osób szukających balansu między wydajnością a ceną. Idealny do pracy i rozrywki.</p>
-      </div>
-    </section>
-    <section id="contact">
-      <h2>Kontakt</h2>
-      <p>Masz pytania lub chcesz podzielić się opinią? Napisz do nas: <a href="mailto:kontakt@sprzetkomputerowy.pl">kontakt@sprzetkomputerowy.pl</a></p>
-    </section>
-  </main>
-  <footer>
-    <p>© 2025 Sprzęt Komputerowy. Wszelkie prawa zastrzeżone.</p>
-  </footer>
+  <section id="reviews">
+    <h2>Recenzje</h2>
+    <p>W tej sekcji znajdziesz opinie i testy różnych modeli kart graficznych, procesorów i innych komponentów komputerowych.</p>
+  </section>
 </body>
 </html>
+
